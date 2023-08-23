@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsiveness</title>
+    <style>
+        h3 {
+            text-align: center;
+            color: rgb(41, 148, 19);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            color: rgb(168, 10, 10);
+        }
+
+        .n {
+            text-align: center;
+            height: 20vh;
+            width: 24vw;
+        }
+
+        .n1 {
+            background-color: rgb(129, 126, 126);
+        }
+
+        .n2 {
+            background-color: rgb(161, 160, 160);
+        }
+
+        .n3 {
+            background-color: rgb(200, 200, 200);
+        }
+
+        .n4 {
+            background-color: rgb(232, 230, 230);
+        }
+        /* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+       
+        @media (max-width:768px){
+            .container {
+                flex-flow : wrap;}
+                .n{
+                width : 45vw;
+             } 
+        }
+        @media (max-width: 480px) {
+            .container {
+                display: flex;
+                flex-direction: column;}
+                .n{
+                width : 100vw;  
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <h3>Media quires for columns-Increase or decrease the size to change</h3>
+    <div class="container">
+        <div class="n n1">
+            <h4>Name1</h4>
+            <span>i am vyshu</span>
+        </div>
+        <div class="n n2">
+            <h4>Name2</h4>
+            <span>i am sai</span>
+        </div>
+        <div class="n n3">
+            <h4>Name3</h4>
+            <span>i am ohm</span>
+        </div>
+        <div class="n n4">
+            <h4>Name4</h4>
+            <span>i am usha</span>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
